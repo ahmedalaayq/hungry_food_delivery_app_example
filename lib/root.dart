@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hungry/core/widgets/navbar.dart';
+import 'package:hungry/features/home/views/home_view.dart';
 
 class Root extends StatefulWidget {
   const Root({super.key});
@@ -9,7 +10,7 @@ class Root extends StatefulWidget {
 }
 
 class _RootState extends State<Root> {
-  List<Widget> views = [Container(), Container(), Container(), Container()];
+  List<Widget> views = [HomeView(), Container(), Container(), Container()];
   int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
